@@ -358,7 +358,7 @@ main.home {
   padding: 0 20px 20px;
 }
 
-.portfolio-button {
+.portfolio-button, .github-button {
   display: inline-block;
   margin-bottom: 20px;
   padding: 10px 20px;
@@ -368,16 +368,16 @@ main.home {
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.2s, transform 0.2s;
+  margin-left: 10px; /* Adjust spacing if needed */
 }
 
-.portfolio-button:hover {
-  background-color: #4e6b9c;
+.portfolio-button:hover, .github-button:hover {
+  background-color: #3e8e41; /* Green color for hover effect */
 }
 
-.portfolio-button:active {
+.portfolio-button:active, .github-button:active {
   transform: translateY(2px);
 }
-
 .portfolio-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);

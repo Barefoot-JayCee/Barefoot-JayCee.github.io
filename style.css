@@ -404,23 +404,24 @@ main.home {
 .google-form {
   display: flex;
   justify-content: center;
-  padding: 20px;
   width: 100%;
 }
 
 .google-form iframe {
   border: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  max-width: 640px;
 }
 
 /* Ensure the iframe is properly sized on larger screens */
 @media (min-width: 768px) {
   .google-form iframe {
-    width: 640px;
-    height: 956px;
+    width: 640px; /* Fixed width on larger screens */
+    height: 956px; /* Fixed height on larger screens */
   }
 }
+
 
 /* Blog Page Styles */
 .blog {

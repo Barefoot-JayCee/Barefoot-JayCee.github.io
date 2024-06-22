@@ -371,3 +371,22 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.google-form {
+  display: flex;
+  justify-content: center;
+}
+
+.google-form iframe {
+  border: 0;
+}

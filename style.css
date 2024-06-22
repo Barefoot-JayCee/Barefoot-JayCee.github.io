@@ -164,8 +164,7 @@ footer {
   padding: 10px;
   background-color: var(--primary-color);
   color: var(--white);
-  position: absolute;
-  bottom: 0;
+  position: relative; /* Change to relative to avoid overlapping with content */
   width: 100%;
 }
 
@@ -370,6 +369,15 @@ footer {
   .portfolio-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px; /* Add padding to the bottom to prevent footer overlap */
 }
 
 .contact {

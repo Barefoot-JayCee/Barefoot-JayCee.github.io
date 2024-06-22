@@ -27,6 +27,16 @@ body {
   min-height: 100vh;
 }
 
+main {
+  flex: 1;
+  margin-top: 60px; /* Adjust based on the height of the header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px; /* Adjust based on the height of the footer */
+}
+
 a {
   text-decoration: none;
   color: inherit; /* Ensures links inherit color from their parent element */
@@ -34,7 +44,7 @@ a {
 
 /* Header Styles */
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -117,6 +127,7 @@ footer {
   color: var(--white);
   position: relative;
   width: 100%;
+  margin-top: auto; /* Ensures the footer stays at the bottom */
 }
 
 /* Landing Page Styles */
@@ -173,6 +184,14 @@ footer {
 }
 
 /* Home Page (Nav) Styles */
+main.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Adjusts the content alignment */
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;

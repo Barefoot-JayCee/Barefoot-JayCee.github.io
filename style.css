@@ -259,17 +259,31 @@ main.home {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 40px 20px; /* Increased padding */
   text-align: center;
 }
 
 .bio {
-  max-width: 600px;
+  max-width: 800px; /* Increased max-width for more space */
+  margin-bottom: 40px; /* Added margin to create space between sections */
+}
+
+.bio h1 {
+  margin-bottom: 20px; /* Added margin for spacing below header */
+}
+
+.bio p {
+  margin-bottom: 20px; /* Added margin for spacing below paragraphs */
+  line-height: 2; /* Adjust this value as needed for desired spacing */
 }
 
 .skills, .experience, .connect {
   margin-top: 40px;
   text-align: center;
+}
+
+.skills h2, .experience h2, .connect h2 {
+  margin-bottom: 20px; /* Added margin for spacing below headers */
 }
 
 .skills ul {

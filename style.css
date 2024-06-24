@@ -263,20 +263,11 @@ main.home {
   text-align: center;
 }
 
-.profile-picture img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
 .bio {
   max-width: 600px;
 }
 
-.skills, .experience {
+.skills, .experience, .connect {
   margin-top: 40px;
   text-align: center;
 }
@@ -295,25 +286,58 @@ main.home {
   border-radius: 4px;
 }
 
-.experience p {
-  max-width: 600px;
-  margin: 0 auto;
+/* Certifications Grid */
+.certifications-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.certification-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(40, 44, 52, 0.3);
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.certification-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 600px) {
-  .about {
-    flex-direction: row;
-    justify-content: center;
-    text-align: left;
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .profile-picture {
-    margin-right: 20px;
+@media (min-width: 1000px) {
+  .certifications-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  .bio {
-    max-width: none;
-  }
+/* Connect with Me Section */
+.connect .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.connect .social-icons a {
+  font-size: 2rem;
+  color: var(--primary-color);
+  transition: color 0.3s;
+}
+
+.connect .social-icons a:hover {
+  color: var(--accent-color);
 }
 
 /* Portfolio Page Styles */
